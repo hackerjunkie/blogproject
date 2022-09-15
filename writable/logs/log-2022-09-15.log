@@ -1,0 +1,282 @@
+ERROR - 2022-09-15 02:14:43 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\Gebruiker\Projects\blogproject\app\Models\NewsModel.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Gebruiker\Projects\blogproject\app\Controllers\News.php(12): App\Models\NewsModel->getNews()
+#8 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\News->index()
+#9 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#10 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Gebruiker\Projects\blogproject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Gebrui...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\Gebruiker\Projects\blogproject\app\Models\NewsModel.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\Gebruiker\Projects\blogproject\app\Controllers\News.php(12): App\Models\NewsModel->getNews()
+#7 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\News->index()
+#8 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#9 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Gebruiker\Projects\blogproject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Gebrui...')
+#12 {main}
+CRITICAL - 2022-09-15 02:14:43 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `news`', [], false)
+ 3 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\NewsModel.php(13): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\News.php(12): App\Models\NewsModel->getNews()
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\News->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-15 02:33:08 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\Gebruiker\Projects\blogproject\app\Models\NewsModel.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Gebruiker\Projects\blogproject\app\Controllers\News.php(12): App\Models\NewsModel->getNews()
+#8 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\News->index()
+#9 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#10 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Gebruiker\Projects\blogproject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Gebrui...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\Gebruiker\Projects\blogproject\app\Models\NewsModel.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\Gebruiker\Projects\blogproject\app\Controllers\News.php(12): App\Models\NewsModel->getNews()
+#7 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\News->index()
+#8 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#9 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Gebruiker\Projects\blogproject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Gebrui...')
+#12 {main}
+CRITICAL - 2022-09-15 02:33:08 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `news`', [], false)
+ 3 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\NewsModel.php(13): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\News.php(12): App\Models\NewsModel->getNews()
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\News->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-15 02:33:24 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\Gebruiker\Projects\blogproject\app\Models\NewsModel.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Gebruiker\Projects\blogproject\app\Controllers\News.php(12): App\Models\NewsModel->getNews()
+#8 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\News->index()
+#9 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#10 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Gebruiker\Projects\blogproject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Gebrui...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\Gebruiker\Projects\blogproject\app\Models\NewsModel.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\Gebruiker\Projects\blogproject\app\Controllers\News.php(12): App\Models\NewsModel->getNews()
+#7 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\News->index()
+#8 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#9 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Gebruiker\Projects\blogproject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Gebrui...')
+#12 {main}
+CRITICAL - 2022-09-15 02:33:24 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `news`', [], false)
+ 3 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\NewsModel.php(13): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\News.php(12): App\Models\NewsModel->getNews()
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\News->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-15 02:35:11 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\Gebruiker\Projects\blogproject\app\Models\NewsModel.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Gebruiker\Projects\blogproject\app\Controllers\News.php(12): App\Models\NewsModel->getNews()
+#8 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\News->index()
+#9 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#10 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Gebruiker\Projects\blogproject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Gebrui...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\Gebruiker\Projects\blogproject\app\Models\NewsModel.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\Gebruiker\Projects\blogproject\app\Controllers\News.php(12): App\Models\NewsModel->getNews()
+#7 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\News->index()
+#8 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#9 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Gebruiker\Projects\blogproject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Gebrui...')
+#12 {main}
+CRITICAL - 2022-09-15 02:35:11 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `news`', [], false)
+ 3 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\NewsModel.php(13): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\News.php(12): App\Models\NewsModel->getNews()
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\News->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-15 02:35:13 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\Gebruiker\Projects\blogproject\app\Models\NewsModel.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Gebruiker\Projects\blogproject\app\Controllers\News.php(12): App\Models\NewsModel->getNews()
+#8 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\News->index()
+#9 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#10 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Gebruiker\Projects\blogproject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Gebrui...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\Gebruiker\Projects\blogproject\app\Models\NewsModel.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\Gebruiker\Projects\blogproject\app\Controllers\News.php(12): App\Models\NewsModel->getNews()
+#7 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\News->index()
+#8 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#9 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Gebruiker\Projects\blogproject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Gebrui...')
+#12 {main}
+CRITICAL - 2022-09-15 02:35:13 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `news`', [], false)
+ 3 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\NewsModel.php(13): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\News.php(12): App\Models\NewsModel->getNews()
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\News->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-15 02:36:26 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\Gebruiker\Projects\blogproject\app\Models\NewsModel.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Gebruiker\Projects\blogproject\app\Controllers\News.php(12): App\Models\NewsModel->getNews()
+#8 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\News->index()
+#9 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#10 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Gebruiker\Projects\blogproject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Gebrui...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\Gebruiker\Projects\blogproject\app\Models\NewsModel.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\Gebruiker\Projects\blogproject\app\Controllers\News.php(12): App\Models\NewsModel->getNews()
+#7 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\News->index()
+#8 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#9 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Gebruiker\Projects\blogproject\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Gebruiker\Projects\blogproject\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Gebrui...')
+#12 {main}
+CRITICAL - 2022-09-15 02:36:26 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `news`', [], false)
+ 3 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\NewsModel.php(13): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\News.php(12): App\Models\NewsModel->getNews()
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\News->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
